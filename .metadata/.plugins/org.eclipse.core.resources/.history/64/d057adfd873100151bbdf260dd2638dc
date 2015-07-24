@@ -1,0 +1,13 @@
+$(document).ready(function(){
+	//Update portfolio
+	$('#updatePortfolio').submit(function(){
+		$.ajax({
+			url: 'updatePortfolio',
+			type: 'POST',
+			dataType: 'json',
+			data: $('#updatePortfolio').serialize();
+		})
+		
+	}
+	
+}

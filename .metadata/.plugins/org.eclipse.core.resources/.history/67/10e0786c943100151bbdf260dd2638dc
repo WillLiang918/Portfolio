@@ -1,0 +1,21 @@
+$(document).ready(function(){
+	//Update portfolio
+	$('#updatePortfolio').submit(function(){
+		$.ajax({
+			url: 'updatePortfolio',
+			type: 'POST',
+			dataType: 'json',
+			data: $('#updatePortfolio'),
+			success: function(data){
+				if(data.isValid){
+					$('#displayName').html('Your deposit is: ' + data.depositAmt);
+					$('#displayName').slideDown(500);
+				}
+				else {
+					alert('Please enter a valid username!')
+				}
+			} 
+		})
+		
+	})
+})

@@ -1,0 +1,2 @@
+127.0.0.1 - - [21/Jul/2015:14:12:07 -0400] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [21/Jul/2015:14:12:11 -0400] "GET /Task_Manager/UserRegistrationServlet?first_name=&last_name=&email=&password=&password_confirmation=&submit=register HTTP/1.1" 404 1023
